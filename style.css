@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#c6c7c7;
+}
+
+.container{
+    height: 550px;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.calculator{
+    width: 320px;
+    height: 550px;
+    background-color: #010100;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 3rem;
+    box-shadow: 0 4px 8px #101010, 0px 6px 20px 0 #101010;
+}
+
+input{
+    width: 250px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button{
+    cursor: pointer;
+}
+.operator, .number{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number{
+    background-color: #333232;
+    color: #fff;
+}
+
+.operator{
+    background-color: #a6a7a7;
+    color:#333232;
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.operator:active, .number:active{
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus{
+    outline: 0;
+}
+
+#divide, #multiply, #minus, #plus, #equalto {
+    font-size: 20px;
+    background-color: #ef9b30;
+    color: #fff;
+}
+
+#zero{
+    width: 129px;
+    height: 50px;
+    border-radius: 2rem;
+}
+
